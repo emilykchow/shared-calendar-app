@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home'
+import React, { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+
+    window.location.href = 'http://localhost:3001/auth';
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
     </div>
   );
 }
 
 export default App;
+ 
+
+// go register for oauth
